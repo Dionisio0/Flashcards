@@ -9,12 +9,6 @@ fun main(args: Array<String>){
     val hardValue = mutableMapOf<String, String>()
     val logList = LinkedList<String>()
     var go = true
- 
- 
- 
- 
- 
- 
     var fileToSave = ""
     for (indexArg in 0..(args.size - 1)) {
         if(args[indexArg].equals("-import")) {
@@ -35,11 +29,6 @@ fun main(args: Array<String>){
             fileToSave = args[indexArg + 1]
         }
     }
- 
- 
- 
- 
- 
     while(go) {
         print(menu())
         logList.add(menu())
